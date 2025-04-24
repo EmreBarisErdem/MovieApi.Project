@@ -2,7 +2,7 @@ using MovieApi.Application.Features.CQRSDesignPattern.Handlers.CategoryHandlers;
 using MovieApi.Application.Features.CQRSDesignPattern.Handlers.MovieHandlers;
 using MovieApi.Application.Features.MediatorDesignPattern.Handlers.CastHandlers;
 using MovieApi.Application.Features.MediatorDesignPattern.Handlers.TagHandlers;
-using System.Reflection;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
