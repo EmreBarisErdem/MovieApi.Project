@@ -21,6 +21,7 @@ namespace MovieApi.Application.Features.CQRSDesignPattern.Handlers.CategoryHandl
 		public async Task<List<GetCategoryQueryResult>> Handle()
 		{
 			var values = await _context.Categories.ToListAsync();
+
 			return values.Select(x => new GetCategoryQueryResult
 			{
 				CategoryId = x.CategoryId,

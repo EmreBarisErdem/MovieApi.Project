@@ -12,7 +12,7 @@ namespace MovieApi.Persistance.Context
 	{
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlServer("Data Source=MYDRAGON\\MSSQLSERVER1;Initial Catalog=MovieDB;Integrated Security=True;Trust Server Certificate=True");
+			optionsBuilder.UseSqlServer("Data Source=MYDRAGON;Initial Catalog=API_MovieDB;Integrated Security=True;Trust Server Certificate=True");
 		}
 
 		public DbSet<Cast> Casts { get; set; }
